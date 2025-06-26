@@ -5,13 +5,15 @@
 * 使用`React`为什么可以直接使用`Input`, 而`Vue`为什么需要`ElInput`页面上使用`<el-input />` 对于初学者都有这个问题
 * 为什么`React`可以使用`Form.Item`, 而`Vue`需要`ElFormItem`?
 
-有什么方式可以让Vue上面烦恼吗？可以巧用`new Proxy`对对象转换处理得到组件, 我有`el.ts`文件, 代码如下，导出2个组件，一个是tsx格式，一个是vue格式，通过`defineAsyncComponent`动态导入组件
+有什么方式可以让Vue没有上面烦恼吗？可以巧用`new Proxy`对对象转换处理得到组件, 给出`el.ts`简单示例文件, 代码如下，导出2个组件，一个是`tsx`格式，一个是`vue`格式，通过`defineAsyncComponent`动态导入组件
+
+### `el.ts` 示例
 
 ```ts
 import type Hello from "./hello";
 import type HelloWorld from "./hello-world.vue";
 
-interface El {
+type El = {
   Hello: typeof Hello;
   HelloWorld: typeof HelloWorld;
 }
@@ -29,7 +31,8 @@ export default new Proxy<El>({} as El, {
 
 ```
 
-使用地方
+### `app.vue` 示例
+
 ```vue
 <script lang="ts" setup>
 import El from './El';
@@ -42,7 +45,9 @@ import El from './El';
 
 这样组件可以按模块划分，目前最流行的是`element-plus`, 简单封装一下，就可以让Vue支持namespace
 
-**ps: 包暂时未发布，等待发布**
+- [x] 代码 + TS
+- [x] 文档
+- [ ] 发布
 
 ## 安装
 
