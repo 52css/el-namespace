@@ -1,0 +1,1 @@
+# 如何让Vue支持namespace
