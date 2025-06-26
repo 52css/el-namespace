@@ -1,5 +1,5 @@
 {
-  "name": "example",
+  "name": "el-example",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,7 +11,7 @@
   "dependencies": {
     "element-plus": "^2.10.2",
     "vue": "^3.5.17",
-    "@namespace/el": "workspace:*"
+    "@52css/el-namespace": "workspace:*"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.0",

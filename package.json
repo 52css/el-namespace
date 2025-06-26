@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "example:dev": "pnpm --filter example run dev",
-    "el:build": "pnpm --filter @namespace/el run build"
+    "el:dev": "pnpm --filter el-example run dev",
+    "el:build": "pnpm --filter @52css/el-namespace run build"
   },
   "keywords": [],
   "author": "",

@@ -8,9 +8,9 @@ importers:
 
   .: {}
 
-  apps/example:
+  apps/el-example:
     dependencies:
-      '@namespace/el':
+      '@52css/el-namespace':
         specifier: workspace:*
         version: link:../../packages/el
       element-plus:
