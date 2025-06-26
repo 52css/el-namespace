@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import El from '@packages/el';
+import El from '@namespace/el';
 
 </script>
 

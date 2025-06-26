@@ -1,0 +1,14 @@
+{
+  "name": "@52css/namespace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "example:dev": "pnpm --filter example run dev",
+    "el:build": "pnpm --filter @namespace/el run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0"
+}

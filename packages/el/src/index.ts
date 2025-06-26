@@ -122,17 +122,7 @@ import {
   ElWatermark,
 } from "element-plus";
 
-// console.log("all", all);
-// const components = [];
-// for (var key in all) {
-//   if (/^El/.test(key)) {
-//     components.push(key);
-//   }
-// }
-
-// console.log("components", components.join(","));
-
-interface El {
+type El = {
   Affix: typeof ElAffix;
   Alert: typeof ElAlert;
   Anchor: typeof ElAnchor;
@@ -254,7 +244,7 @@ interface El {
   TreeV2: typeof ElTreeV2;
   Upload: typeof ElUpload;
   Watermark: typeof ElWatermark;
-}
+};
 
 export default new Proxy<El>({} as El, {
   get(target, prop) {
