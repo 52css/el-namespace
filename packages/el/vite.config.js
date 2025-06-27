@@ -8,14 +8,15 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
-      name: "ElNamespace",
-      fileName: (format) => `el-namespace.${format}.js`,
+      name: "52cssEl",
+      fileName: (format) => `52css-el.${format}.js`,
     },
     rollupOptions: {
       external: ["vue", 'element-plus'], // 排除 vue，不打包
       output: {
         globals: {
           vue: "Vue",
+          'element-plus': "ElementPlus",
         },
       },
     },

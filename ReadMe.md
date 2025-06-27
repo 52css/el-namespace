@@ -52,14 +52,14 @@ import El from './El';
 ## 安装
 
 ```bash
-pnpm install @52css/el-namespace
+pnpm install @52css/el
 ```
 
 ## 使用
 
 ```vue
 <script lang="ts" setup>
-import El from '@52css/el-namespace';
+import El from '@52css/el';
 </script>
 <template>
   <El.Button type="primary">Primary</El.Button>
