@@ -35,7 +35,7 @@ export default new Proxy<El>({} as El, {
 
 ```vue
 <script lang="ts" setup>
-import El from './El';
+import El from './el';
 </script>
 <template>
   <El.Hello name="52css" />
