@@ -1,9 +1,9 @@
 {
   "name": "@52css/el",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "main": "src/index.ts",
-  "types": "dist/index.d.ts",
+  "types": "src/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
