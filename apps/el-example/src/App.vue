@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import El from '@52css/el-namespace';
+import El from '@52css/el';
 </script>
 
 <template>

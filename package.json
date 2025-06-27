@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "el:dev": "pnpm --filter el-example run dev",
-    "el:build": "pnpm --filter @52css/el-namespace run build"
+    "el:build": "pnpm --filter @52css/el run build"
   },
   "keywords": [],
   "author": "",
